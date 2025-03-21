@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Search</h1>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search for a movie...">
+                <button id="button-search" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main id="movies-grid" class="movies-grid">
+          <div class="welcome-message">
+              <i class="fas fa-film"></i>
+              <h2>Welcome to Movie Search</h2>
+              <p>Enter a movie title in the search box above to begin</p>
+          </div>
+        </main>
+    </div>
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-details">
+                <img id="modal-poster" src="" alt="Movie poster">
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-release-date"></p>
+                    <p id="modal-rating"></p>
+                    <p id="modal-overview"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
